@@ -10,9 +10,9 @@
   :root { --bg: #FBF8F3; --surface: #FFFFFF; --ink: #1D1F1E; --soft: #5F635C; --line: #E8E6E0; --accent: #B7441F; }
   @media (prefers-color-scheme: dark) {
     :root { --bg: #121312; --surface: #1C1E1C; --ink: #F1F0EB; --soft: #A5A9A1; --line: #2E312D; --accent: #F59872; }
-    .light { display: none; }
+    img.light { display: none !important; }
   }
-  @media (prefers-color-scheme: light) { .dark { display: none; } }
+  @media (prefers-color-scheme: light) { img.dark { display: none !important; } }
   * { box-sizing: border-box; }
   body {
     margin: 0; background: var(--bg); color: var(--ink);
